@@ -88,7 +88,7 @@ app.get("/s", async (req, res) => {
 })
 
 
-app.get("/cn1", async (req, res) => {
+app.get("/notes", async (req, res) => {
     po = await User.findAll({
         include: Note,
         where: {
